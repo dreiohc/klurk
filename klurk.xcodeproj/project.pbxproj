@@ -3,27 +3,63 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BCB498906120EA7CB007C3CF /* Pods_klurk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F04B27B695AC59A320741419 /* Pods_klurk.framework */; };
+		C43D34BB25FB7B0200F1D3F7 /* LoginButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = C43D34BA25FB7B0200F1D3F7 /* LoginButtons.swift */; };
+		C447A03125FB1A4D00211738 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C447A03025FB1A4D00211738 /* SignUpViewController.swift */; };
+		C447A03425FB1A5600211738 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C447A03325FB1A5600211738 /* LoginViewController.swift */; };
+		C447A03B25FB1C8500211738 /* MyStore.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C447A03A25FB1C8500211738 /* MyStore.storyboard */; };
+		C447A03F25FB1F1D00211738 /* SignUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C447A03E25FB1F1D00211738 /* SignUp.storyboard */; };
+		C447A04225FB1F6300211738 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C447A04125FB1F6300211738 /* Login.storyboard */; };
+		C447A04625FB2FF900211738 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C447A04525FB2FF900211738 /* Coordinator.swift */; };
+		C447A04925FB304B00211738 /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = C447A04825FB304B00211738 /* Storyboarded.swift */; };
+		C447A04C25FB316800211738 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C447A04B25FB316800211738 /* MainCoordinator.swift */; };
+		C482CE8725F909A70080D895 /* FirebaseWebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C482CE8625F909A70080D895 /* FirebaseWebService.swift */; };
 		C48A26B025F8C8C900AA05B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48A26AF25F8C8C900AA05B2 /* AppDelegate.swift */; };
 		C48A26B225F8C8C900AA05B2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48A26B125F8C8C900AA05B2 /* SceneDelegate.swift */; };
-		C48A26B425F8C8C900AA05B2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48A26B325F8C8C900AA05B2 /* ViewController.swift */; };
-		C48A26B725F8C8C900AA05B2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C48A26B525F8C8C900AA05B2 /* Main.storyboard */; };
 		C48A26B925F8C8CB00AA05B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C48A26B825F8C8CB00AA05B2 /* Assets.xcassets */; };
 		C48A26BC25F8C8CB00AA05B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C48A26BA25F8C8CB00AA05B2 /* LaunchScreen.storyboard */; };
+		C48A26C725F8C91400AA05B2 /* InventoryListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48A26C625F8C91400AA05B2 /* InventoryListViewController.swift */; };
+		C48A26CC25F8E6E500AA05B2 /* MyStoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48A26CB25F8E6E500AA05B2 /* MyStoreViewController.swift */; };
+		C48A26D025F8FA2C00AA05B2 /* InventoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48A26CF25F8FA2C00AA05B2 /* InventoryCell.swift */; };
+		C48A26DD25F8FE8800AA05B2 /* ProductListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48A26DC25F8FE8800AA05B2 /* ProductListViewModel.swift */; };
+		C48A26E925F905E000AA05B2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C48A26E825F905E000AA05B2 /* GoogleService-Info.plist */; };
+		C49624B725F9EF3D00E23C72 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49624B625F9EF3D00E23C72 /* Constants.swift */; };
+		C49624BF25FA325A00E23C72 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49624BE25FA325A00E23C72 /* User.swift */; };
+		C4DB746D25F9E25600BDDBB3 /* Inventory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48A26D425F8FD2E00AA05B2 /* Inventory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6998AEE78C10D4414C473E70 /* Pods-klurk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-klurk.release.xcconfig"; path = "Target Support Files/Pods-klurk/Pods-klurk.release.xcconfig"; sourceTree = "<group>"; };
+		9067A423D7E8E9DBDDC2C5DF /* Pods-klurk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-klurk.debug.xcconfig"; path = "Target Support Files/Pods-klurk/Pods-klurk.debug.xcconfig"; sourceTree = "<group>"; };
+		C43D34BA25FB7B0200F1D3F7 /* LoginButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginButtons.swift; sourceTree = "<group>"; };
+		C447A03025FB1A4D00211738 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		C447A03325FB1A5600211738 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		C447A03A25FB1C8500211738 /* MyStore.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MyStore.storyboard; sourceTree = "<group>"; };
+		C447A03E25FB1F1D00211738 /* SignUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignUp.storyboard; sourceTree = "<group>"; };
+		C447A04125FB1F6300211738 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		C447A04525FB2FF900211738 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		C447A04825FB304B00211738 /* Storyboarded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboarded.swift; sourceTree = "<group>"; };
+		C447A04B25FB316800211738 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		C482CE8625F909A70080D895 /* FirebaseWebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseWebService.swift; sourceTree = "<group>"; };
 		C48A26AC25F8C8C900AA05B2 /* klurk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = klurk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C48A26AF25F8C8C900AA05B2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C48A26B125F8C8C900AA05B2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C48A26B325F8C8C900AA05B2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		C48A26B625F8C8C900AA05B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C48A26B825F8C8CB00AA05B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C48A26BB25F8C8CB00AA05B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C48A26BD25F8C8CB00AA05B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C48A26C625F8C91400AA05B2 /* InventoryListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryListViewController.swift; sourceTree = "<group>"; };
+		C48A26CB25F8E6E500AA05B2 /* MyStoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyStoreViewController.swift; sourceTree = "<group>"; };
+		C48A26CF25F8FA2C00AA05B2 /* InventoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryCell.swift; sourceTree = "<group>"; };
+		C48A26D425F8FD2E00AA05B2 /* Inventory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Inventory.swift; sourceTree = "<group>"; };
+		C48A26DC25F8FE8800AA05B2 /* ProductListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListViewModel.swift; sourceTree = "<group>"; };
+		C48A26E825F905E000AA05B2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Volumes/Local SD/Downloads/Safari/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C49624B625F9EF3D00E23C72 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		C49624BE25FA325A00E23C72 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		F04B27B695AC59A320741419 /* Pods_klurk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_klurk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +67,73 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCB498906120EA7CB007C3CF /* Pods_klurk.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		33F2B328BDDDE5DDC553B3C1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9067A423D7E8E9DBDDC2C5DF /* Pods-klurk.debug.xcconfig */,
+				6998AEE78C10D4414C473E70 /* Pods-klurk.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		7B3799A673C00BA7B01944B9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F04B27B695AC59A320741419 /* Pods_klurk.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C43D34B925FB7AF400F1D3F7 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				C43D34BA25FB7B0200F1D3F7 /* LoginButtons.swift */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+		C447A03925FB1C6C00211738 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				C447A03A25FB1C8500211738 /* MyStore.storyboard */,
+				C447A03E25FB1F1D00211738 /* SignUp.storyboard */,
+				C447A04125FB1F6300211738 /* Login.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		C447A04425FB2FE600211738 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				C447A04525FB2FF900211738 /* Coordinator.swift */,
+				C447A04825FB304B00211738 /* Storyboarded.swift */,
+				C447A04B25FB316800211738 /* MainCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		C482CE8525F9098A0080D895 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				C482CE8625F909A70080D895 /* FirebaseWebService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		C48A26A325F8C8C900AA05B2 = {
 			isa = PBXGroup;
 			children = (
 				C48A26AE25F8C8C900AA05B2 /* klurk */,
 				C48A26AD25F8C8C900AA05B2 /* Products */,
+				33F2B328BDDDE5DDC553B3C1 /* Pods */,
+				7B3799A673C00BA7B01944B9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +148,67 @@
 		C48A26AE25F8C8C900AA05B2 /* klurk */ = {
 			isa = PBXGroup;
 			children = (
+				C447A04425FB2FE600211738 /* Coordinators */,
+				C447A03925FB1C6C00211738 /* Storyboards */,
+				C49624B525F9EF2100E23C72 /* Constants */,
+				C48A26D325F8FD1A00AA05B2 /* Models */,
+				C48A26DB25F8FE6D00AA05B2 /* View Models */,
+				C48A26C525F8C8F100AA05B2 /* Controllers */,
+				C43D34B925FB7AF400F1D3F7 /* Buttons */,
+				C48A26CE25F8F9E500AA05B2 /* Cells */,
+				C482CE8525F9098A0080D895 /* Services */,
 				C48A26AF25F8C8C900AA05B2 /* AppDelegate.swift */,
 				C48A26B125F8C8C900AA05B2 /* SceneDelegate.swift */,
-				C48A26B325F8C8C900AA05B2 /* ViewController.swift */,
-				C48A26B525F8C8C900AA05B2 /* Main.storyboard */,
 				C48A26B825F8C8CB00AA05B2 /* Assets.xcassets */,
+				C48A26E825F905E000AA05B2 /* GoogleService-Info.plist */,
 				C48A26BA25F8C8CB00AA05B2 /* LaunchScreen.storyboard */,
 				C48A26BD25F8C8CB00AA05B2 /* Info.plist */,
 			);
 			path = klurk;
+			sourceTree = "<group>";
+		};
+		C48A26C525F8C8F100AA05B2 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C48A26CB25F8E6E500AA05B2 /* MyStoreViewController.swift */,
+				C48A26C625F8C91400AA05B2 /* InventoryListViewController.swift */,
+				C447A03025FB1A4D00211738 /* SignUpViewController.swift */,
+				C447A03325FB1A5600211738 /* LoginViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		C48A26CE25F8F9E500AA05B2 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				C48A26CF25F8FA2C00AA05B2 /* InventoryCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		C48A26D325F8FD1A00AA05B2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C49624BE25FA325A00E23C72 /* User.swift */,
+				C48A26D425F8FD2E00AA05B2 /* Inventory.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C48A26DB25F8FE6D00AA05B2 /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				C48A26DC25F8FE8800AA05B2 /* ProductListViewModel.swift */,
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
+		C49624B525F9EF2100E23C72 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				C49624B625F9EF3D00E23C72 /* Constants.swift */,
+			);
+			path = Constants;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +218,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C48A26C025F8C8CB00AA05B2 /* Build configuration list for PBXNativeTarget "klurk" */;
 			buildPhases = (
+				9D1F77842415936A6DDA9C2F /* [CP] Check Pods Manifest.lock */,
 				C48A26A825F8C8C900AA05B2 /* Sources */,
 				C48A26A925F8C8C900AA05B2 /* Frameworks */,
 				C48A26AA25F8C8C900AA05B2 /* Resources */,
+				03973701ABC5502E059959FE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -124,36 +270,86 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C447A03B25FB1C8500211738 /* MyStore.storyboard in Resources */,
 				C48A26BC25F8C8CB00AA05B2 /* LaunchScreen.storyboard in Resources */,
+				C447A04225FB1F6300211738 /* Login.storyboard in Resources */,
+				C48A26E925F905E000AA05B2 /* GoogleService-Info.plist in Resources */,
 				C48A26B925F8C8CB00AA05B2 /* Assets.xcassets in Resources */,
-				C48A26B725F8C8C900AA05B2 /* Main.storyboard in Resources */,
+				C447A03F25FB1F1D00211738 /* SignUp.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		03973701ABC5502E059959FE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-klurk/Pods-klurk-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-klurk/Pods-klurk-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-klurk/Pods-klurk-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9D1F77842415936A6DDA9C2F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-klurk-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C48A26A825F8C8C900AA05B2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C48A26B425F8C8C900AA05B2 /* ViewController.swift in Sources */,
+				C447A03425FB1A5600211738 /* LoginViewController.swift in Sources */,
+				C447A03125FB1A4D00211738 /* SignUpViewController.swift in Sources */,
+				C447A04625FB2FF900211738 /* Coordinator.swift in Sources */,
+				C49624B725F9EF3D00E23C72 /* Constants.swift in Sources */,
+				C48A26CC25F8E6E500AA05B2 /* MyStoreViewController.swift in Sources */,
+				C43D34BB25FB7B0200F1D3F7 /* LoginButtons.swift in Sources */,
+				C4DB746D25F9E25600BDDBB3 /* Inventory.swift in Sources */,
 				C48A26B025F8C8C900AA05B2 /* AppDelegate.swift in Sources */,
+				C48A26C725F8C91400AA05B2 /* InventoryListViewController.swift in Sources */,
+				C482CE8725F909A70080D895 /* FirebaseWebService.swift in Sources */,
+				C49624BF25FA325A00E23C72 /* User.swift in Sources */,
+				C48A26DD25F8FE8800AA05B2 /* ProductListViewModel.swift in Sources */,
+				C48A26D025F8FA2C00AA05B2 /* InventoryCell.swift in Sources */,
 				C48A26B225F8C8C900AA05B2 /* SceneDelegate.swift in Sources */,
+				C447A04C25FB316800211738 /* MainCoordinator.swift in Sources */,
+				C447A04925FB304B00211738 /* Storyboarded.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		C48A26B525F8C8C900AA05B2 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C48A26B625F8C8C900AA05B2 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		C48A26BA25F8C8CB00AA05B2 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -216,7 +412,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -271,7 +467,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -283,10 +479,13 @@
 		};
 		C48A26C125F8C8CB00AA05B2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9067A423D7E8E9DBDDC2C5DF /* Pods-klurk.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q8WR79NDSZ;
 				INFOPLIST_FILE = klurk/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -294,17 +493,21 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.myrondulay.klurk;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
 		C48A26C225F8C8CB00AA05B2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6998AEE78C10D4414C473E70 /* Pods-klurk.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q8WR79NDSZ;
 				INFOPLIST_FILE = klurk/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -312,8 +515,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.myrondulay.klurk;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};

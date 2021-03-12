@@ -7,9 +7,9 @@
 
 import Foundation
 
-class ProductListViewModel {
-	
-	let product = [Product]()
-	
-	
+class ProductListViewModel  {
+
+	init() {
+		
+	}
 }
