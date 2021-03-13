@@ -7,12 +7,20 @@
 
 import UIKit
 
-class SignUpViewController: UIViewController, Storyboarded {
+class SignUpViewController: UIViewController {
 	
+	var didSendEventClosure: ((SignUpViewController.Event) -> Void)?
 	
 	// MARK: - Life cycle
 	override func viewDidLoad() {
 		super.viewDidLoad()
+		view.backgroundColor = .blue
 	}
 	
 }
+extension SignUpViewController {
+	enum Event {
+		case ready
+	}
+}
+

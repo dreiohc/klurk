@@ -7,9 +7,9 @@
 
 import UIKit
 
-class LoginViewController: UIViewController, Storyboarded {
+class LoginViewController: UIViewController {
 	
-	weak var coordinator: MainCoordinator?
+	var didSendEventClosure: ((LoginViewController.Event) -> Void)?
 	
 	private var stackView = UIStackView()
 	private var titleLabel = UILabel()
@@ -40,7 +40,7 @@ class LoginViewController: UIViewController, Storyboarded {
 		
 		let loginButton = LoginButton()
 		loginButton.setTitle("LOGIN", for: .normal)
-		loginButton.addTarget(self, action: #selector(goToLoginPage), for: .touchUpInside)
+		loginButton.addTarget(self, action: #selector(loginButtonDidTapped), for: .touchUpInside)
 		
 		stackView.addArrangedSubview(signUpButton)
 		stackView.addArrangedSubview(loginButton)
@@ -50,8 +50,8 @@ class LoginViewController: UIViewController, Storyboarded {
 		
 	}
 	
-	@objc private func goToLoginPage() {
-		
+	@objc private func loginButtonDidTapped() {
+		didSendEventClosure?(.login)
 	}
 	
 	func setStackViewConstraints() {
@@ -82,4 +82,10 @@ class LoginViewController: UIViewController, Storyboarded {
 	}
 	
 	
+}
+
+extension LoginViewController {
+	enum Event {
+		case login
+	}
 }

@@ -11,20 +11,24 @@ import Firebase
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-	var coordinator: MainCoordinator?
+	var appCoordinator: AppCoordinator?
 	var window: UIWindow?
 
 	func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
 		FirebaseApp.configure()
 
-		let navController = UINavigationController()
+		window = UIWindow.init(frame: UIScreen.main.bounds)
 		
-		let coordinator = MainCoordinator(navigationController: navController)
-		coordinator.start()
-		window = UIWindow(frame: UIScreen.main.bounds)
-		window?.rootViewController = navController
+		let navigationController: UINavigationController = .init()
+
+		window?.rootViewController = navigationController
 		window?.makeKeyAndVisible()
+		
+		appCoordinator = AppCoordinator.init(navigationController)
+		appCoordinator?.start()
+						
 		return true
+		
 	}
 
 	// MARK: UISceneSession Lifecycle

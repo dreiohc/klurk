@@ -15,8 +15,14 @@
 		C447A03F25FB1F1D00211738 /* SignUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C447A03E25FB1F1D00211738 /* SignUp.storyboard */; };
 		C447A04225FB1F6300211738 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C447A04125FB1F6300211738 /* Login.storyboard */; };
 		C447A04625FB2FF900211738 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C447A04525FB2FF900211738 /* Coordinator.swift */; };
-		C447A04925FB304B00211738 /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = C447A04825FB304B00211738 /* Storyboarded.swift */; };
-		C447A04C25FB316800211738 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C447A04B25FB316800211738 /* MainCoordinator.swift */; };
+		C46A95E825FBD4360072BB4A /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46A95E725FBD4360072BB4A /* AppCoordinator.swift */; };
+		C46A95EC25FBD66C0072BB4A /* LoginCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46A95EB25FBD66C0072BB4A /* LoginCoordinator.swift */; };
+		C46A95F025FBD7250072BB4A /* TabBarPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46A95EF25FBD7250072BB4A /* TabBarPage.swift */; };
+		C46A95F425FBD7670072BB4A /* TabCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46A95F325FBD7670072BB4A /* TabCoordinator.swift */; };
+		C46A95FD25FBF0CD0072BB4A /* Dashboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C46A95FC25FBF0CD0072BB4A /* Dashboard.storyboard */; };
+		C46A960025FBF0E00072BB4A /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46A95FF25FBF0E00072BB4A /* DashboardViewController.swift */; };
+		C46A960325FBF1300072BB4A /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C46A960225FBF1300072BB4A /* Settings.storyboard */; };
+		C46A960625FBF1540072BB4A /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46A960525FBF1540072BB4A /* SettingsViewController.swift */; };
 		C482CE8725F909A70080D895 /* FirebaseWebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C482CE8625F909A70080D895 /* FirebaseWebService.swift */; };
 		C48A26B025F8C8C900AA05B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48A26AF25F8C8C900AA05B2 /* AppDelegate.swift */; };
 		C48A26B225F8C8C900AA05B2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48A26B125F8C8C900AA05B2 /* SceneDelegate.swift */; };
@@ -42,8 +48,14 @@
 		C447A03E25FB1F1D00211738 /* SignUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignUp.storyboard; sourceTree = "<group>"; };
 		C447A04125FB1F6300211738 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		C447A04525FB2FF900211738 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
-		C447A04825FB304B00211738 /* Storyboarded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboarded.swift; sourceTree = "<group>"; };
-		C447A04B25FB316800211738 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		C46A95E725FBD4360072BB4A /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		C46A95EB25FBD66C0072BB4A /* LoginCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCoordinator.swift; sourceTree = "<group>"; };
+		C46A95EF25FBD7250072BB4A /* TabBarPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarPage.swift; sourceTree = "<group>"; };
+		C46A95F325FBD7670072BB4A /* TabCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabCoordinator.swift; sourceTree = "<group>"; };
+		C46A95FC25FBF0CD0072BB4A /* Dashboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Dashboard.storyboard; sourceTree = "<group>"; };
+		C46A95FF25FBF0E00072BB4A /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
+		C46A960225FBF1300072BB4A /* Settings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
+		C46A960525FBF1540072BB4A /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		C482CE8625F909A70080D895 /* FirebaseWebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseWebService.swift; sourceTree = "<group>"; };
 		C48A26AC25F8C8C900AA05B2 /* klurk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = klurk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C48A26AF25F8C8C900AA05B2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -105,6 +117,8 @@
 				C447A03A25FB1C8500211738 /* MyStore.storyboard */,
 				C447A03E25FB1F1D00211738 /* SignUp.storyboard */,
 				C447A04125FB1F6300211738 /* Login.storyboard */,
+				C46A95FC25FBF0CD0072BB4A /* Dashboard.storyboard */,
+				C46A960225FBF1300072BB4A /* Settings.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -113,10 +127,19 @@
 			isa = PBXGroup;
 			children = (
 				C447A04525FB2FF900211738 /* Coordinator.swift */,
-				C447A04825FB304B00211738 /* Storyboarded.swift */,
-				C447A04B25FB316800211738 /* MainCoordinator.swift */,
+				C46A95E725FBD4360072BB4A /* AppCoordinator.swift */,
+				C46A95EB25FBD66C0072BB4A /* LoginCoordinator.swift */,
+				C46A95F325FBD7670072BB4A /* TabCoordinator.swift */,
 			);
 			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		C46A95EE25FBD7130072BB4A /* Tab Bars */ = {
+			isa = PBXGroup;
+			children = (
+				C46A95EF25FBD7250072BB4A /* TabBarPage.swift */,
+			);
+			path = "Tab Bars";
 			sourceTree = "<group>";
 		};
 		C482CE8525F9098A0080D895 /* Services */ = {
@@ -155,6 +178,7 @@
 				C48A26DB25F8FE6D00AA05B2 /* View Models */,
 				C48A26C525F8C8F100AA05B2 /* Controllers */,
 				C43D34B925FB7AF400F1D3F7 /* Buttons */,
+				C46A95EE25FBD7130072BB4A /* Tab Bars */,
 				C48A26CE25F8F9E500AA05B2 /* Cells */,
 				C482CE8525F9098A0080D895 /* Services */,
 				C48A26AF25F8C8C900AA05B2 /* AppDelegate.swift */,
@@ -174,6 +198,8 @@
 				C48A26C625F8C91400AA05B2 /* InventoryListViewController.swift */,
 				C447A03025FB1A4D00211738 /* SignUpViewController.swift */,
 				C447A03325FB1A5600211738 /* LoginViewController.swift */,
+				C46A95FF25FBF0E00072BB4A /* DashboardViewController.swift */,
+				C46A960525FBF1540072BB4A /* SettingsViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -273,8 +299,10 @@
 				C447A03B25FB1C8500211738 /* MyStore.storyboard in Resources */,
 				C48A26BC25F8C8CB00AA05B2 /* LaunchScreen.storyboard in Resources */,
 				C447A04225FB1F6300211738 /* Login.storyboard in Resources */,
+				C46A960325FBF1300072BB4A /* Settings.storyboard in Resources */,
 				C48A26E925F905E000AA05B2 /* GoogleService-Info.plist in Resources */,
 				C48A26B925F8C8CB00AA05B2 /* Assets.xcassets in Resources */,
+				C46A95FD25FBF0CD0072BB4A /* Dashboard.storyboard in Resources */,
 				C447A03F25FB1F1D00211738 /* SignUp.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -328,22 +356,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C46A960025FBF0E00072BB4A /* DashboardViewController.swift in Sources */,
 				C447A03425FB1A5600211738 /* LoginViewController.swift in Sources */,
 				C447A03125FB1A4D00211738 /* SignUpViewController.swift in Sources */,
+				C46A960625FBF1540072BB4A /* SettingsViewController.swift in Sources */,
 				C447A04625FB2FF900211738 /* Coordinator.swift in Sources */,
 				C49624B725F9EF3D00E23C72 /* Constants.swift in Sources */,
+				C46A95E825FBD4360072BB4A /* AppCoordinator.swift in Sources */,
 				C48A26CC25F8E6E500AA05B2 /* MyStoreViewController.swift in Sources */,
+				C46A95F025FBD7250072BB4A /* TabBarPage.swift in Sources */,
 				C43D34BB25FB7B0200F1D3F7 /* LoginButtons.swift in Sources */,
 				C4DB746D25F9E25600BDDBB3 /* Inventory.swift in Sources */,
 				C48A26B025F8C8C900AA05B2 /* AppDelegate.swift in Sources */,
+				C46A95F425FBD7670072BB4A /* TabCoordinator.swift in Sources */,
 				C48A26C725F8C91400AA05B2 /* InventoryListViewController.swift in Sources */,
 				C482CE8725F909A70080D895 /* FirebaseWebService.swift in Sources */,
 				C49624BF25FA325A00E23C72 /* User.swift in Sources */,
 				C48A26DD25F8FE8800AA05B2 /* ProductListViewModel.swift in Sources */,
 				C48A26D025F8FA2C00AA05B2 /* InventoryCell.swift in Sources */,
+				C46A95EC25FBD66C0072BB4A /* LoginCoordinator.swift in Sources */,
 				C48A26B225F8C8C900AA05B2 /* SceneDelegate.swift in Sources */,
-				C447A04C25FB316800211738 /* MainCoordinator.swift in Sources */,
-				C447A04925FB304B00211738 /* Storyboarded.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

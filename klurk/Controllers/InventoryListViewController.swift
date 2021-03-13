@@ -7,10 +7,7 @@
 
 import UIKit
 
-final class InvetoryListViewController: UIViewController, Storyboarded {
-		
-	weak var coordinator: MainCoordinator?
-	var passdata: String?
+final class InvetoryListViewController: UIViewController {
 	
 	var collectionView: UICollectionView = {
 		let layout = UICollectionViewFlowLayout()

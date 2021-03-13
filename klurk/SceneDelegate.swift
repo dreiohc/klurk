@@ -8,8 +8,8 @@
 import UIKit
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
-
-	var coordinator: MainCoordinator?
+	
+	var appCoordinator: AppCoordinator?
 	var window: UIWindow?
 
 
@@ -17,13 +17,15 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 		
 		guard let windowScene = (scene as? UIWindowScene) else { return }
 		
-		let navController = UINavigationController()
+		window = UIWindow.init(windowScene: windowScene)
 		
-		let coordinator = MainCoordinator(navigationController: navController)
-		coordinator.start()
-		window = UIWindow(windowScene: windowScene)
-		window?.rootViewController = navController
+		let navigationController: UINavigationController = .init()
+
+		window?.rootViewController = navigationController
 		window?.makeKeyAndVisible()
+		
+		appCoordinator = AppCoordinator.init(navigationController)
+		appCoordinator?.start()
 	}
 
 	func sceneDidDisconnect(_ scene: UIScene) {
