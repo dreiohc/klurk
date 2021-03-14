@@ -18,16 +18,13 @@ final class InventoryCell: UICollectionViewCell {
 	}
 	
 	fileprivate let itemName: UILabel = {
-		let label = UILabel()
-		label.translatesAutoresizingMaskIntoConstraints = false
-		label.textColor = .black
+		let label = ItemDetailsLabel()
+		label.font = .systemFont(ofSize: 20, weight: .bold)
 		return label
 	}()
 	
 	fileprivate let itemPrice: UILabel = {
-		let label = UILabel()
-		label.translatesAutoresizingMaskIntoConstraints = false
-		label.textColor = .black
+		let label = ItemDetailsLabel()
 		return label
 	}()
 	
@@ -35,18 +32,27 @@ final class InventoryCell: UICollectionViewCell {
 		super.init(frame: frame)
 		contentView.addSubview(itemName)
 		contentView.addSubview(itemPrice)
-		setupItemConstraints()
+		setupItemNameConstraints()
+		setupItemPriceConstraints()
 	}
 	
 	required init?(coder: NSCoder) {
 		fatalError("init(coder:) has not been implemented")
 	}
 	
-	private func setupItemConstraints() {
+	private func setupItemNameConstraints() {
 		itemName.translatesAutoresizingMaskIntoConstraints = false
-		itemName.topAnchor.constraint(equalTo: contentView.safeAreaLayoutGuide.topAnchor, constant: 20).isActive = true
-		itemName.bottomAnchor.constraint(equalTo: contentView.safeAreaLayoutGuide.bottomAnchor, constant: 20).isActive = true
-		itemName.trailingAnchor.constraint(equalTo: contentView.safeAreaLayoutGuide.trailingAnchor, constant: 20).isActive = true
-		itemName.leadingAnchor.constraint(equalTo: contentView.safeAreaLayoutGuide.leadingAnchor, constant: 20).isActive = true
+		itemName.topAnchor.constraint(equalTo: contentView.safeAreaLayoutGuide.topAnchor, constant: 5).isActive = true
+		itemName.trailingAnchor.constraint(equalTo: contentView.safeAreaLayoutGuide.trailingAnchor, constant: -5).isActive = true
+		itemName.leadingAnchor.constraint(equalTo: contentView.safeAreaLayoutGuide.leadingAnchor, constant: 5).isActive = true
 	}
+	
+	private func setupItemPriceConstraints() {
+		itemPrice.translatesAutoresizingMaskIntoConstraints = false
+		itemPrice.topAnchor.constraint(equalTo: itemName.bottomAnchor, constant: 5).isActive = true
+		itemPrice.heightAnchor.constraint(equalToConstant: 20).isActive = true
+		itemPrice.trailingAnchor.constraint(equalTo: contentView.safeAreaLayoutGuide.trailingAnchor, constant: -5).isActive = true
+		itemPrice.leadingAnchor.constraint(equalTo: contentView.safeAreaLayoutGuide.leadingAnchor, constant: 5).isActive = true
+	}
+	
 }

@@ -21,11 +21,9 @@ class LoginButton: UIButton {
 	
 	func setupButton() {
 		setTitleColor(.white, for: .normal)
-		backgroundColor = .blue
-		titleLabel?.font = .systemFont(ofSize: 16)
+		backgroundColor = .systemBlue
+		titleLabel?.font = .systemFont(ofSize: 16, weight: .bold)
 		layer.cornerRadius = 10
 	}
-	
-	
 }
 	

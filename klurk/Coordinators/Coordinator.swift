@@ -9,6 +9,7 @@ import UIKit
 
 enum Event {
 	case loginButtonTapped
+	case signUpButtonTapped
 }
 
 protocol Coordinator: class {
@@ -29,7 +30,6 @@ extension Coordinator {
 	func finish() {
 		childCoordinators.removeAll()
 		finishDelegate?.coordinatorDidFinish(childCoordinator: self)
-		print("finish na \(childCoordinators)")
 	}
 }
 
@@ -38,5 +38,5 @@ protocol CoordinatorFinishDelegate: class {
 }
 
 enum CoordinatorType {
-	case login, mystore, _default , tab
+	case login, mystore, _default , tab, signUp
 }

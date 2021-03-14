@@ -9,8 +9,9 @@ import UIKit
 
 // Define what type of flows can be started from this Coordinator
 protocol AppCoordinatorProtocol: Coordinator {
-	func showLoginFlow()
-	func showMainFlow()
+	func showLoginPage()
+	func showMyStorePage()
+	func showSignUpPage()
 }
 
 // App coordinator is the only one coordinator which will exist during app's life cycle
@@ -22,7 +23,7 @@ class AppCoordinator: AppCoordinatorProtocol {
 	
 	var childCoordinators = [Coordinator]()
 	
-	var type: CoordinatorType { ._default }
+	var type: CoordinatorType = ._default
 	
 	required init(_ navigationController: UINavigationController) {
 		self.navigationController = navigationController
@@ -30,19 +31,24 @@ class AppCoordinator: AppCoordinatorProtocol {
 	}
 	
 	func start() {
-		showLoginFlow()
+		showLoginPage()
 	}
 	
-	func showLoginFlow() {
-		// Implementation of Login FLow
+	func showLoginPage() {
 		let loginCoordinator = LoginCoordinator.init(navigationController)
 		loginCoordinator.finishDelegate = self
 		loginCoordinator.start()
 		childCoordinators.append(loginCoordinator)
 	}
 	
-	func showMainFlow() {
-		// Implementation Main (Tab bar) FLow
+	func showSignUpPage() {
+		let signUpCoordinator = SignUpCoordinator.init(navigationController)
+		signUpCoordinator.finishDelegate = self
+		signUpCoordinator.start()
+		childCoordinators.append(signUpCoordinator)
+	}
+	
+	func showMyStorePage() {
 		let tabCoordinator = TabCoordinator.init(navigationController)
 		tabCoordinator.finishDelegate = self
 		tabCoordinator.start()
@@ -57,19 +63,18 @@ extension AppCoordinator: CoordinatorFinishDelegate {
 		childCoordinators = childCoordinators.filter({ $0.type != childCoordinator.type })
 		
 		switch childCoordinator.type {
-		case .tab:
-			navigationController.viewControllers.removeAll()
-			
-			showLoginFlow()
 		case .login:
 			navigationController.viewControllers.removeAll()
-			
-			showMainFlow()
+			showLoginPage()
+		case .mystore:
+			navigationController.viewControllers.removeAll()
+			showMyStorePage()
+		case .signUp:
+			navigationController.viewControllers.removeAll()
+			showSignUpPage()
 		default:
 			break
 		}
-		
-		print("childcoordinators: \(childCoordinators)")
 	}
 	
 }

@@ -15,6 +15,7 @@ final class MyStoreViewController: UIViewController {
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
+		self.title = "My Store"
 		configureInventoryListViewController()
 	}
 	
@@ -34,8 +35,6 @@ final class MyStoreViewController: UIViewController {
 		inventoryListViewController.view.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -20).isActive = true
 		inventoryListViewController.view.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 20).isActive = true
 	}
-	
-	
 }
 
 extension MyStoreViewController {

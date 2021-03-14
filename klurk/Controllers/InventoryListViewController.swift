@@ -26,6 +26,7 @@ final class InvetoryListViewController: UIViewController {
 	private func configureCollectionView() {
 		collectionView.delegate = self
 		collectionView.dataSource = self
+		collectionView.backgroundColor = .systemBackground
 		view.addSubview(collectionView)
 		setupCollectionViewConstraints()
 	}
@@ -44,20 +45,21 @@ final class InvetoryListViewController: UIViewController {
 extension InvetoryListViewController: UICollectionViewDelegateFlowLayout, UICollectionViewDataSource {
 	
 	func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-		return 20
+		return 9
 	}
 	
 	func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
 		guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as? InventoryCell else {
 			fatalError("failed to load collection cell")
 		}
-		
-		cell.backgroundColor = .red
+		cell.backgroundColor = .systemBlue
+		cell.inventory = Inventory(inventoryID: "1234", itemName: "Lucky Me Pancit Canton", itemPrice: "12.00".addCurrencySymbol(.dollar))
+		cell.layer.cornerRadius = 10
 		return cell
 	}
 	
 	func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-		return CGSize(width: collectionView.frame.width / 7, height: collectionView.frame.height / 4)
+		return CGSize(width: collectionView.frame.width / 7, height: collectionView.frame.height / 4.5)
 	}
 }
 

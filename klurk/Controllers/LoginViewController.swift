@@ -36,37 +36,38 @@ class LoginViewController: UIViewController {
 	func addButtonsToStackView() {
 		let signUpButton = LoginButton()
 		signUpButton.setTitle("SIGN UP", for: .normal)
-		signUpButton.addTarget(self, action: #selector(goToSignUpPage), for: .touchUpInside)
+		signUpButton.addTarget(self, action: #selector(signUpButtonTapped), for: .touchUpInside)
 		
 		let loginButton = LoginButton()
 		loginButton.setTitle("LOGIN", for: .normal)
-		loginButton.addTarget(self, action: #selector(loginButtonDidTapped), for: .touchUpInside)
+		loginButton.addTarget(self, action: #selector(loginButtonTapped), for: .touchUpInside)
 		
 		stackView.addArrangedSubview(signUpButton)
 		stackView.addArrangedSubview(loginButton)
 	}
 	
-	@objc private func goToSignUpPage() {
-		
+	@objc private func signUpButtonTapped() {
+		didSendEventClosure?(.signUp)
 	}
 	
-	@objc private func loginButtonDidTapped() {
+	@objc private func loginButtonTapped() {
 		didSendEventClosure?(.login)
 	}
 	
 	func setStackViewConstraints() {
 		stackView.translatesAutoresizingMaskIntoConstraints = false
-		stackView.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 30).isActive = true
-		stackView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 50).isActive = true
-		stackView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -50).isActive = true
-		stackView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: 30).isActive = true
+		stackView.centerXAnchor.constraint(equalTo: view.safeAreaLayoutGuide.centerXAnchor).isActive = true
+		stackView.widthAnchor.constraint(equalToConstant: 250).isActive = true
+		stackView.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 40).isActive = true
 	}
 	
 	// MARK: - Configure TitleLabel
+	
 	func configureTitleLabel() {
 		view.addSubview(titleLabel)
-		titleLabel.text	= "Login Page"
-		titleLabel.font	= UIFont.boldSystemFont(ofSize: 36)
+		titleLabel.text	= "Welcome to klurk"
+		titleLabel.textColor = .label
+		titleLabel.font	= UIFont.boldSystemFont(ofSize: 50)
 		titleLabel.textAlignment =	.center
 		titleLabel.numberOfLines = 0
 		titleLabel.adjustsFontSizeToFitWidth = true
@@ -75,10 +76,9 @@ class LoginViewController: UIViewController {
 	
 	func setTitleLabelConstraints() {
 		titleLabel.translatesAutoresizingMaskIntoConstraints = false
-		titleLabel.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 20).isActive = true
+		titleLabel.centerYAnchor.constraint(equalTo: view.safeAreaLayoutGuide.centerYAnchor, constant: -150).isActive = true
 		titleLabel.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 20).isActive = true
 		titleLabel.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -20).isActive = true
-
 	}
 	
 	
@@ -87,5 +87,6 @@ class LoginViewController: UIViewController {
 extension LoginViewController {
 	enum Event {
 		case login
+		case signUp
 	}
 }

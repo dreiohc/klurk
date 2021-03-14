@@ -36,3 +36,11 @@ enum StoreType: String, Codable {
 	case hardware = "Hardware"
 	case coffeeShope = "Coffee shop"
 }
+
+
+// MARK: Others
+
+enum Currency {
+	case php
+	case dollar
+}

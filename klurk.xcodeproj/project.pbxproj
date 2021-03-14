@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		BCB498906120EA7CB007C3CF /* Pods_klurk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F04B27B695AC59A320741419 /* Pods_klurk.framework */; };
+		C42FB81925FE75F0006D12F9 /* ItemDetailsLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42FB81425FE7396006D12F9 /* ItemDetailsLabel.swift */; };
+		C42FB81E25FE7D8C006D12F9 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42FB81D25FE7D8C006D12F9 /* String.swift */; };
 		C43D34BB25FB7B0200F1D3F7 /* LoginButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = C43D34BA25FB7B0200F1D3F7 /* LoginButtons.swift */; };
 		C447A03125FB1A4D00211738 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C447A03025FB1A4D00211738 /* SignUpViewController.swift */; };
 		C447A03425FB1A5600211738 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C447A03325FB1A5600211738 /* LoginViewController.swift */; };
@@ -15,6 +17,7 @@
 		C447A03F25FB1F1D00211738 /* SignUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C447A03E25FB1F1D00211738 /* SignUp.storyboard */; };
 		C447A04225FB1F6300211738 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C447A04125FB1F6300211738 /* Login.storyboard */; };
 		C447A04625FB2FF900211738 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C447A04525FB2FF900211738 /* Coordinator.swift */; };
+		C45E9C0C25FE3444005DDF53 /* SignUpCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45E9C0B25FE3444005DDF53 /* SignUpCoordinator.swift */; };
 		C46A95E825FBD4360072BB4A /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46A95E725FBD4360072BB4A /* AppCoordinator.swift */; };
 		C46A95EC25FBD66C0072BB4A /* LoginCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46A95EB25FBD66C0072BB4A /* LoginCoordinator.swift */; };
 		C46A95F025FBD7250072BB4A /* TabBarPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46A95EF25FBD7250072BB4A /* TabBarPage.swift */; };
@@ -41,6 +44,8 @@
 /* Begin PBXFileReference section */
 		6998AEE78C10D4414C473E70 /* Pods-klurk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-klurk.release.xcconfig"; path = "Target Support Files/Pods-klurk/Pods-klurk.release.xcconfig"; sourceTree = "<group>"; };
 		9067A423D7E8E9DBDDC2C5DF /* Pods-klurk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-klurk.debug.xcconfig"; path = "Target Support Files/Pods-klurk/Pods-klurk.debug.xcconfig"; sourceTree = "<group>"; };
+		C42FB81425FE7396006D12F9 /* ItemDetailsLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailsLabel.swift; sourceTree = "<group>"; };
+		C42FB81D25FE7D8C006D12F9 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		C43D34BA25FB7B0200F1D3F7 /* LoginButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginButtons.swift; sourceTree = "<group>"; };
 		C447A03025FB1A4D00211738 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		C447A03325FB1A5600211738 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -48,6 +53,7 @@
 		C447A03E25FB1F1D00211738 /* SignUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignUp.storyboard; sourceTree = "<group>"; };
 		C447A04125FB1F6300211738 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		C447A04525FB2FF900211738 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		C45E9C0B25FE3444005DDF53 /* SignUpCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpCoordinator.swift; sourceTree = "<group>"; };
 		C46A95E725FBD4360072BB4A /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		C46A95EB25FBD66C0072BB4A /* LoginCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCoordinator.swift; sourceTree = "<group>"; };
 		C46A95EF25FBD7250072BB4A /* TabBarPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarPage.swift; sourceTree = "<group>"; };
@@ -103,6 +109,22 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		C42FB81325FE7350006D12F9 /* Labels */ = {
+			isa = PBXGroup;
+			children = (
+				C42FB81425FE7396006D12F9 /* ItemDetailsLabel.swift */,
+			);
+			path = Labels;
+			sourceTree = "<group>";
+		};
+		C42FB81C25FE7D65006D12F9 /* Utils + Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C42FB81D25FE7D8C006D12F9 /* String.swift */,
+			);
+			path = "Utils + Extensions";
+			sourceTree = "<group>";
+		};
 		C43D34B925FB7AF400F1D3F7 /* Buttons */ = {
 			isa = PBXGroup;
 			children = (
@@ -129,6 +151,7 @@
 				C447A04525FB2FF900211738 /* Coordinator.swift */,
 				C46A95E725FBD4360072BB4A /* AppCoordinator.swift */,
 				C46A95EB25FBD66C0072BB4A /* LoginCoordinator.swift */,
+				C45E9C0B25FE3444005DDF53 /* SignUpCoordinator.swift */,
 				C46A95F325FBD7670072BB4A /* TabCoordinator.swift */,
 			);
 			path = Coordinators;
@@ -172,15 +195,17 @@
 			isa = PBXGroup;
 			children = (
 				C447A04425FB2FE600211738 /* Coordinators */,
-				C447A03925FB1C6C00211738 /* Storyboards */,
-				C49624B525F9EF2100E23C72 /* Constants */,
 				C48A26D325F8FD1A00AA05B2 /* Models */,
 				C48A26DB25F8FE6D00AA05B2 /* View Models */,
 				C48A26C525F8C8F100AA05B2 /* Controllers */,
+				C447A03925FB1C6C00211738 /* Storyboards */,
+				C48A26CE25F8F9E500AA05B2 /* Cells */,
+				C42FB81325FE7350006D12F9 /* Labels */,
 				C43D34B925FB7AF400F1D3F7 /* Buttons */,
 				C46A95EE25FBD7130072BB4A /* Tab Bars */,
-				C48A26CE25F8F9E500AA05B2 /* Cells */,
+				C42FB81C25FE7D65006D12F9 /* Utils + Extensions */,
 				C482CE8525F9098A0080D895 /* Services */,
+				C49624B525F9EF2100E23C72 /* Constants */,
 				C48A26AF25F8C8C900AA05B2 /* AppDelegate.swift */,
 				C48A26B125F8C8C900AA05B2 /* SceneDelegate.swift */,
 				C48A26B825F8C8CB00AA05B2 /* Assets.xcassets */,
@@ -194,10 +219,10 @@
 		C48A26C525F8C8F100AA05B2 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				C447A03325FB1A5600211738 /* LoginViewController.swift */,
 				C48A26CB25F8E6E500AA05B2 /* MyStoreViewController.swift */,
 				C48A26C625F8C91400AA05B2 /* InventoryListViewController.swift */,
 				C447A03025FB1A4D00211738 /* SignUpViewController.swift */,
-				C447A03325FB1A5600211738 /* LoginViewController.swift */,
 				C46A95FF25FBF0E00072BB4A /* DashboardViewController.swift */,
 				C46A960525FBF1540072BB4A /* SettingsViewController.swift */,
 			);
@@ -358,12 +383,14 @@
 			files = (
 				C46A960025FBF0E00072BB4A /* DashboardViewController.swift in Sources */,
 				C447A03425FB1A5600211738 /* LoginViewController.swift in Sources */,
+				C42FB81E25FE7D8C006D12F9 /* String.swift in Sources */,
 				C447A03125FB1A4D00211738 /* SignUpViewController.swift in Sources */,
 				C46A960625FBF1540072BB4A /* SettingsViewController.swift in Sources */,
 				C447A04625FB2FF900211738 /* Coordinator.swift in Sources */,
 				C49624B725F9EF3D00E23C72 /* Constants.swift in Sources */,
 				C46A95E825FBD4360072BB4A /* AppCoordinator.swift in Sources */,
 				C48A26CC25F8E6E500AA05B2 /* MyStoreViewController.swift in Sources */,
+				C45E9C0C25FE3444005DDF53 /* SignUpCoordinator.swift in Sources */,
 				C46A95F025FBD7250072BB4A /* TabBarPage.swift in Sources */,
 				C43D34BB25FB7B0200F1D3F7 /* LoginButtons.swift in Sources */,
 				C4DB746D25F9E25600BDDBB3 /* Inventory.swift in Sources */,
@@ -375,6 +402,7 @@
 				C48A26DD25F8FE8800AA05B2 /* ProductListViewModel.swift in Sources */,
 				C48A26D025F8FA2C00AA05B2 /* InventoryCell.swift in Sources */,
 				C46A95EC25FBD66C0072BB4A /* LoginCoordinator.swift in Sources */,
+				C42FB81925FE75F0006D12F9 /* ItemDetailsLabel.swift in Sources */,
 				C48A26B225F8C8C900AA05B2 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -519,6 +547,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Q8WR79NDSZ;
 				INFOPLIST_FILE = klurk/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -541,6 +570,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Q8WR79NDSZ;
 				INFOPLIST_FILE = klurk/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
